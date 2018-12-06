@@ -1,0 +1,176 @@
+* {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  color: white;
+}
+
+body {
+  background-color: mediumseagreen;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.App {
+  text-align: center;
+}
+
+#header {
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-bottom: 3px solid white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#rsTitle {
+  border: 5px solid white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+nav#navMenuAut, nav#navMenuTL {
+  margin-top: 10px;
+}
+
+ul#ulMenuAut, ul#ulMenuTL {
+
+}
+
+li.navAutItem, li.navTLItem {
+  display: inline-block;
+  margin: 5px;
+  margin-top: 0;
+  border: 3px solid white;
+  border-radius: 15px;
+  padding: 2.5px 10px;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+li.navAutItem:hover, li.navTLItem:hover {
+  transform: scale(1.2);
+  background-color: white;
+  color: mediumseagreen;
+}
+
+#meio {
+  height: calc(100% - 175px);
+  position: fixed;
+  width: 100%;
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset {
+  border: 2px solid white;
+}
+
+fieldset legend {
+  background-color: white;
+  color: mediumseagreen;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+div.divInput {
+  margin-top: 5px;
+}
+
+label.meuLabel {
+  margin-right: 4px;
+  font-size: 1.1em;
+}
+
+input.meuInput {
+  border: none;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 20px;
+  color: black;
+}
+
+button.botao {
+  padding: 5px 15px;
+  margin-top: 10px;
+  color: mediumseagreen;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+button.botao:hover {
+  transform: scale(1.1);
+}
+
+div#controladorDeFragmentos {
+  width: 100%;
+}
+
+div#fragmentoTL {
+  width: 100%;
+}
+
+div#postagens {
+  border-bottom: 3px solid white;
+  width: 100%;
+}
+
+div#chatJs {
+  margin-top: 10px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#rodape {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 3px solid white;
+}
+
+@media screen and (max-width: 600px) {
+  div.divInput {
+    margin-top: 10px;
+  }
+
+  label.meuLabel {
+    width: 100%;
+  }
+
+  input.meuInput {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
